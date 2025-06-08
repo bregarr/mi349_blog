@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TexasBloggin'</title>
+   <link rel="stylesheet" href="styles.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <h1>TexasBloggin'</h1>
+   </header>
+   <nav>
+      <input type="button" value="Home" onclick="location.href='index.html';">
+      <input type="button" value="About" onclick="location.href='about.html';">
+      <input type="button" value="Contact" onclick="location.href='contact.html';">
+   </nav>
+   <main>
+      <article class="article-one">
+         <section>
+            <h2>Justified Games Price Inflation?</h2>
+            <div>
+               <address class="Author"><a rel="author" href="https://texascod.in">Brendan Garrow</a></address>
+               <time datetime="2025-06-04 16:33">June 6th, 2025</time>
+            </div>
+         </section>
+         <p>There has been a lot of discussion recently revolving around the price of triple A games raising from $60 to $70, and with the release of the Nintendo Switch 2 and a few of their games being as high as $80 it may be time to revisit this topic.</p>
+         <img src="assets/Switch2Games.PNG" alt="Switch 2 Games Page with Pricing">
+         <p class="attribution">Screenshot from <a href="https://www.nintendo.com/us/store/games/nintendo-switch-2-games/?srsltid=AfmBOooIjaqHHOH62esvno4W5NfOz_5ykVG1t4VavOHmX0RxtcuQD-BC#sort=df&p=0">Nintendo.com</a></p>
+         <p>The majority of console game consumers are not those who are willing to spent a large sum of money on a new game, especially with how saturated the market is in some genres. However, one must take into account inflation when discussing whether the price of games are even increasing at all. Using Super Mario 64 as a base point, we can construct the following table using estimates from the <a href=https://www.bls.gov/data/inflation_calculator.htm>Consumer Price Index Calculator</a> to view the increasing prices accounting for inflation.</p>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Cost (Rel to 1996)</th>
+               <th>Cost (Rel to 2025)</th>
+            </tr>
+            <tr>
+               <td>1996</td>
+               <td>$60</td>
+               <td>$29.31</td>
+            </tr>
+            <tr>
+               <td>2000</td>
+               <td>$66.01</td>
+               <td>$32.24</td>
+            </tr>
+            <tr>
+               <td>2010</td>
+               <td>$83.46</td>
+               <td>$40.77</td>
+            </tr>
+            <tr>
+               <td>2020</td>
+               <td>$98.71</td>
+               <td>$48.22</td>
+            </tr>
+            <tr>
+               <td>2025</td>
+               <td>$122.83</td>
+               <td>$60</td>
+            </tr>
+         </table>
+         <p>Since Super Mario 64 released all the way back in 1996, the worth of $60 had just about halved with respect to inflation. Whether or not this justifies the price hike that were seeing is up to the individual, as when it comes to entertainment products it is always the consumer's choice of whether to buy or not. However, when judging companies for increasing their prices keep in mind $60 has not always been $60.</p>
+      </article>
+      <div>
+         <article class="article-two">
+            <section>
+               <h2>Alternative Fuel's Impact on Gasoline Consumption</h2>
+               <div>
+                  <address class="Author"><a rel="author" href="https://texascod.in">Brendan Garrow</a></address>
+                  <time datetime="2025-06-04 16:33">June 6th, 2025</time>
+               </div>
+            </section>
+            <p>Back when I was in Computational Data Science, I did a study on how the increase in alternative fuel use impacted how much gasoline was consumed. As oil and by extension gas account for a large percentage of America's economy, I felt it was important to make sure suddenly switching away from gasoline wouldn't screw us over. What I found still confuses me to this day.</p>
+            <img src="assets/PA_map.png" alt="Graph of Gas consumption against Alternative Fuel Stations on the Pacific Coast">
+            <p class="attribution">From <a href="https://texascod.in">TexasCod.in's "Study on the Impact of Alternative Fuels on Gasoline Consumption"</a></p>
+            <p>This was one of the more extreme findings, but as can be seen from the graph, gasoline consumption dropped really hard around 2020, followed by a spike in alternative fuel stations opened. I believe the gasoline consumption drop can be attributed to the Covid-19 pandemic, as the data was collected by the National Highway Administration, and with the lockdown many people weren't driving especially on the highway. However, what I cannot explain is the spike in stations in 2020. At first, I believed this to be part of Former President Joe Biden's <i>"Build Back Better"</i> plan, but he techincally wasn't sitting president until January 2021. This isn't even a California thing, this finding was consistant throughout most regions.</p>
+            <img src="assets/GP_map.png" alt="Graph of Gas consumption against Alternative Fuel Stations in the Great Plains">
+            <p class="attribution">From <a href="https://texascod.in">TexasCod.in's "Study on the Impact of Alternative Fuels on Gasoline Consumption"</a></p>
+            <p>The great plains region, historially not super progressive, still has the same increase in stations opened, albeit not quite a 'spike' as seen on the Pacific coast. Overall, though, it is not to my belief that alternative fuel stations have greatly impacted the consumption of gasoline at least to this day. It will be interesting to see data a few years in the future which wouldn't be polluted by Covid-19's weirdness. There are a few more graphs as well as the open source code to the study on my portfolio site <a href="https://texascod.in">TexasCod.in</a>. Feel free to check it out!</p>
+         </article>
+         <footer>
+            <form>
+               <label>Sign up for our newsletter:
+                  <input type="text">
+               </label>
+               <button>Subscribe</button>
+            </form>
+         </footer>
+      </div>
+   </main>
+</body>
+</html>

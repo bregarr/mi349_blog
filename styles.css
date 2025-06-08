@@ -1,0 +1,190 @@
+:root {
+   --LightBrown: #D1C6AD;
+   --DarkBrown: #BBADA0;
+   --Pink: #A1869E;
+   --Lavendar: #797596;
+   --Navy: #0B1D51;
+}
+
+html {
+   min-height: 100vh;
+   font-family: "Ubuntu", sans-serif;
+}
+
+body {
+   background: #797596;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background: linear-gradient(180deg,rgba(121, 117, 150, 1) 0%, rgba(209, 198, 173, 1) 100%);
+   height: 100%;
+   margin: 0;
+   color: #111;
+}
+
+header {
+   background-color: var(--LightBrown);
+   height: 160px;
+   width: 700px;
+   margin: 10px;
+   margin-top: -10px;
+   border-radius: 20px;
+   padding: 40px;
+   position: absolute;
+   z-index: 2;
+   font-family: "PT Serif", serif;
+}
+
+header h1 {
+   margin: auto;
+   font-size: 96px;
+   color: #111;
+}
+
+nav {
+   background-color: var(--DarkBrown);
+   height: 160px;
+   width: 150px;
+   padding: 20px 25px;
+   margin-left: 790px;
+   margin-top: 10px;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   position: absolute;
+   z-index: 1;
+}
+
+nav input {
+   text-decoration: none;
+   border: none;
+   width: 100%;
+   height: 33.33%;
+   font-family: "Ubuntu", sans-serif;
+   font-size: 28px;
+   background-color: #A5998E45;
+   color: #eee;
+}
+nav input:hover {
+   background-color: #A5998Eaa;
+   color: #fff;
+}
+nav input:active {
+   background-color: #A5998E;
+}
+
+main {
+   padding: 2.5%;
+   margin: 1.5%;
+   height: 85%;
+   width: 92.5%;
+   background-color: var(--Lavendar);
+   position: relative;
+   border-radius: 56px;
+   display: flex;
+   gap: 150px;
+}
+
+main div {
+   width: 100%;
+}
+
+article {
+   background-color: var(--DarkBrown);
+   border-radius: 24px;
+   width: 100%;
+   padding: 25px;
+}
+
+article section {
+   display: flex;
+   gap: 35px;
+}
+
+article section div {
+   margin: auto;
+   margin-left: 0;
+   width: 20%;
+}
+
+article h2 {
+   margin: 0;
+   font-size: 56px;
+   width: 100%;
+   display: block;
+   font-family: "PT Serif", serif;
+}
+
+article p {
+   font-size: 20px;
+}
+
+article li {
+   font-size: 20px;
+}
+
+main article img {
+   height: auto;
+   width: 50%;
+}
+
+article.article-one {
+   margin-top: 200px;
+}
+
+article.article-two {
+   margin-bottom: 120px;
+}
+
+footer {
+   background-color: var(--DarkBrown);
+   border-radius: 24px;
+   padding: 25px;
+}
+
+button {
+   text-decoration: none;
+   border: none;
+   padding: 15px;
+   margin-left: 20px;
+   border-radius: 24px;
+   font-size: 18px;
+   background: var(--LightBrown);
+   box-shadow: 4px 4px 4px var(--Navy);
+}
+button:hover {
+   background: #F2E5C9;
+   box-shadow: 4px 4px 4px #13348E;
+}
+button:active {
+   box-shadow: inset 1px 2px 8px var(--Navy);
+   background: var(--LightBrown);
+}
+
+main.imagebox {
+   width: 20%;
+   right: 0;
+   top: 0;
+   position: absolute;
+   display: block;
+   height: auto;
+}
+main.imagebox p {
+   font-size: 48px;
+   text-align: center;
+   margin: 0;
+   margin-top: 20px;
+}
+
+main img {
+   width: 100%;
+   height: auto;
+}
+
+article form label {
+   display: block;
+   margin-bottom: 15px;
+}
+
+p.attribution {
+   font-size: 14px;
+   margin-top: 0;
+}
