@@ -26,12 +26,13 @@ header {
    height: 160px;
    width: 700px;
    margin: 10px;
+   margin-right: 0;
    margin-top: -10px;
    border-radius: 20px;
    padding: 40px;
-   position: absolute;
    z-index: 2;
    font-family: "PT Serif", serif;
+   box-shadow: 4px 4px 4px #000;
 }
 
 header h1 {
@@ -45,12 +46,11 @@ nav {
    height: 160px;
    width: 150px;
    padding: 20px 25px;
-   margin-left: 790px;
    margin-top: 10px;
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
-   position: absolute;
-   z-index: 1;
+   /* z-index: 1; */
+   box-shadow: 4px 4px 4px #000;
 }
 
 nav input {
@@ -99,13 +99,13 @@ article section {
    gap: 35px;
 }
 
-article section div {
+section div {
    margin: auto;
    margin-left: 0;
    width: 20%;
 }
 
-article h2 {
+h2 {
    margin: 0;
    font-size: 56px;
    width: 100%;
@@ -113,11 +113,11 @@ article h2 {
    font-family: "PT Serif", serif;
 }
 
-article p {
+p {
    font-size: 20px;
 }
 
-article li {
+li {
    font-size: 20px;
 }
 
@@ -126,11 +126,11 @@ main article img {
    width: 50%;
 }
 
-article.article-one {
-   margin-top: 200px;
+.article-one {
+   /* margin-top: 200px; */
 }
 
-article.article-two {
+.article-two {
    margin-bottom: 120px;
 }
 
@@ -161,20 +161,21 @@ button:active {
 
 aside.imagebox {
    padding: 2.5%;
+   margin: 0;
    margin: 1.5%;
    height: 85%;
    background-color: var(--Lavendar);
-   position: relative;
+   position: absolute;
    border-radius: 56px;
-   display: flex;
+   display: block;
    gap: 150px;
 
    width: 20%;
-   right: 0;
-   top: 0;
-   position: absolute;
-   display: block;
    height: auto;
+
+   float: right;
+   top: 0;
+   right: 0;
 }
 aside.imagebox p {
    font-size: 48px;
@@ -196,4 +197,43 @@ article form label {
 p.attribution {
    font-size: 14px;
    margin-top: 0;
+}
+
+/* Added for Project 5 */
+[target="contact-form"]{
+   margin-top: 20px;
+   display: flex;
+   width: 80%;
+}
+
+div label {
+   margin-right: 25px;
+}
+
+#contact-main{
+   width: 50%;
+   min-width: max-content;
+}
+
+#about-main{
+   max-width: 65%;
+   margin-right: 0;
+}
+
+.contact-section {
+   /* margin-top: 200px; */
+   
+   background-color: var(--DarkBrown);
+   border-radius: 24px;
+   width: 100%;
+   padding: 25px;
+}
+
+#nav-div {
+   margin-top: 35px;
+   margin-left: 20px;
+   position: sticky;
+   display: flex;
+   top: 0;
+   z-index: 1;
 }
