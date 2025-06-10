@@ -127,7 +127,7 @@ main article img {
 }
 
 .article-one {
-   /* margin-top: 200px; */
+   max-height: max-content;
 }
 
 .article-two {
@@ -200,7 +200,7 @@ p.attribution {
 }
 
 /* Added for Project 5 */
-[target="contact-form"]{
+.contact-form{
    margin-top: 20px;
    display: flex;
    width: 80%;
@@ -236,4 +236,10 @@ div label {
    display: flex;
    top: 0;
    z-index: 1;
+}
+
+a[href="https://texascod.in"]{
+   font-weight: 800;
+   color: #709775;
+   filter: drop-shadow(0.5px 0.5px #507755);
 }
